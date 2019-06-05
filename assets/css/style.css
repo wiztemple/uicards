@@ -323,11 +323,6 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom { padding-top: 3.25rem;
 .card-description > p {
   font-size: 1rem;
 }
-/* .card-user {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 .username, .profession {
   font-size: 12px;
 }
