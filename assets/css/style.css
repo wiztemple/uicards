@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {  margin-top: 0; margin-bottom: .5rem; }
 .h6 { font-size: 1rem; }
 .h7 { font-size: .8rem; }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lora', serif;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -194,7 +194,17 @@ body {
   color: #ddd;
   font-weight: 100;
 }
-
+.navbar.fixed-top {
+  top: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 30;
+}
+html.fixed-top,
+body.fixed-top {
+  padding-top: 3.25rem;
+}
 .is-fixed-bottom {
   position: fixed;
   left: 0;
@@ -262,6 +272,8 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom { padding-top: 3.25rem;
 }
 .mt-20 { margin-top: 20px; }
 .mt-40 { margin-top: 40px; }
+.mt-60 { margin-top: 60px; }
+.mt-100 { margin-top: 100px; }
 .ml-10 { margin-left: 10px; }
 .mb-20 { margin-bottom: 20px; }
 /*padding*/
@@ -352,9 +364,12 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom { padding-top: 3.25rem;
   position: relative;
   margin-top: 30px;
   background-color: var(--app-bg-color);
+  border-radius: 5px;
 }
 .rec-card__image {
   width: 150px;
   height:200px;
   object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
