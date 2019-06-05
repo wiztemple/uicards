@@ -373,3 +373,27 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom { padding-top: 3.25rem;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 20px 0 0 0;
+}
+.footer-item a {
+  display: block;
+  padding: 10px 0;
+}
+.footer-brand > a {
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 30px;
+}
+.license {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--app-bg-color);
+  border-top: 1px solid var(--light-grey);
+}
+.license > a {
+  color: #777;
+  padding: 20px 0;
+}
