@@ -2,6 +2,7 @@
     --app-bg-color: #fff;
     --light-grey: #eee;
     --sky-blue: #1e90ff;
+    --app-link: #3434e4;
     --mid-black: #444;
     --dark-gray: #495057;
     --grey: #9ea3b0;
@@ -18,7 +19,7 @@ html {
 }
 *, *::before, *::after { box-sizing: inherit; }
 a {
-  color: var(--app-link-color);
+  color: var(--app-link);
   cursor: pointer;
   text-decoration: none;
 }
@@ -94,7 +95,7 @@ body {
 .navbar-burger span {
   display: block;
   position: absolute;
-  top: -10px;
+  top: -6px;
   right: 5px;
   font-size: 46px;
 }
@@ -220,7 +221,7 @@ body.fixed-top {
   height: 500px;
 }
 .banner-info {
-  height: 100%;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,6 +373,62 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom { padding-top: 3.25rem;
   margin-left: 5px;
 }
 
+/*profile card*/
+.profile-card {
+  position: relative;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.02)
+}
+.profile-card__image {
+  width: 100%;
+}
+.profile-card__image > img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+.profile-card__user {
+  position: absolute;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  top: 35px;
+  left: 90px;
+  border-radius: 20px;
+}
+.profile-card__title {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 24px;
+}
+.profile-card__subtitle {
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+}
+.profile-card__details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.profile-card__details-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #444;
+}
+.profile-card__details-item > span {
+  text-align: center;
+}
+.user-details {
+  font-size: 10px;
+  color: #818181;
+}
+
 /*rec-card*/
 .rec-card {
   width: 100%;
@@ -388,6 +445,58 @@ html.footer.is-fixed-bottom, body.footer.is-fixed-bottom { padding-top: 3.25rem;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+/*accessories card*/
+.accessories-card {
+  position: relative;
+  margin-top: 30px;
+  background-color: var(--app-bg-color);
+  font-family: 'Muli', sans-serif;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)
+}
+.accessories-card__header {
+  padding: 15px;
+}
+.accessories-card__content {
+  padding: 20px;
+}
+.accessories-card__title {
+  padding: 20px 0;
+}
+.accessories-card__desc {
+  font-size: 11px;
+  color: #818181;
+  font-weight: 100;
+}
+.accessories-card__span {
+  padding-top: 10px;
+  font-size: 14px;
+}
+.accessories-card__tag {
+  padding-top: 5px;
+  font-size: 12px;
+  color: #818181;
+}
+.accessories-card__image > img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+}
+.accessories-card__play > img {
+  position: absolute;
+  object-fit: cover;
+  width: 40px;
+  height: 40;
+  right: 40px;
+  top: 234px;
+  border-radius: 50%;
+  z-index: 10;
+}
+.accessories-card__footer {
+  padding-top: 30px;
+}
+/*flatcards*/
+/*Music Cards*/
 
 .footer {
   background-color: rgba(0, 0, 0, 0.02);
